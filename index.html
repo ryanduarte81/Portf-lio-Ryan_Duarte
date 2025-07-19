@@ -69,34 +69,46 @@
       </div>
     </section>
     <section id="projetos">
-      <h2>Projetos</h2>
+      <h1>Projetos</h1>
       <div class="projects">
         <div class="project-card">
           <img src="https://api.iconify.design/mdi:format-list-checkbox.svg?color=%23a259f7" alt="To-Do List Logo" class="project-thumb">
-          <h3>TO - DO LIST</h3>
+          <h1>TO - DO LIST</h1>
           <p>Um projeto incrível feito com JavaScript, HTML e CSS. Clique para ver mais detalhes!</p>
           <a href="https://github.com/ryanduarte81/to-do-list" class="btn-project" target="_blank">Ver Projeto</a>
         </div>
         <div class="project-card">
           <img src="mario (1).gif" alt="Super Mario" class="project-thumb">
-          <h3>Simulador Mario Kart</h3>
+          <h1>Simulador Mario Kart</h1>
           <p>Simulador de corridas inspirado no Mario Kart, desenvolvido em Node.js. Lógica de jogo, personagens e pistas aleatórias!</p>
           <a href="https://github.com/ryanduarte81/Simulador-de-Corridas-do-Mario-Kart-com-Node.js" class="btn-project" target="_blank">Ver Projeto</a>
         </div>
         <div class="project-card">
           <img src="https://api.iconify.design/mdi:calendar-account.svg?color=%23a259f7" alt="Ícone de Idade" class="project-thumb">
-          <h3>Verificador de Idade</h3>
+          <h1>Verificador de Idade</h1>
           <p>Aplicação web para calcular e verificar a idade do usuário. Feito com HTML, CSS e JavaScript.</p>
           <a href="https://github.com/ryanduarte81/verificador-de-idade-" class="btn-project" target="_blank">Ver Projeto</a>
         </div>
+        <div class="project-card">
+          <img src="https://api.iconify.design/mdi:cart-outline.svg?color=%23a259f7" alt="Carrinho de Compras" class="project-thumb">
+          <h1>Carrinho de Compras</h1>
+          <p>Projeto de carrinho de compras desenvolvido em JavaScript. Adicione, remova e gerencie produtos facilmente!</p>
+          <a href="https://github.com/ryanduarte81/carrinho-de-compras" class="btn-project" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="project-card">
+          <img src="https://api.iconify.design/mdi:currency-usd.svg?color=%23a259f7" alt="Conversor de Moedas" class="project-thumb">
+          <h1>Conversor de Moedas</h1>
+          <p>Conversor de moedas simples em Python, utilizando a ExchangeRate-API para taxas em tempo real.</p>
+          <a href="https://github.com/ryanduarte81/conversor-de-moedas-" class="btn-project" target="_blank">Ver Projeto</a>
+        </div>
       </div>
     </section>
-    <section id="contato">
+    <section class="contact-section" id="contato">
       <h2>Contato</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" required></textarea>
+      <form class="contact-form" action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+        <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem"></textarea>
         <button type="submit">Enviar</button>
       </form>
     </section>

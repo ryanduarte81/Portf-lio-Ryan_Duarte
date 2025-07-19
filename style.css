@@ -381,6 +381,16 @@ h1, h2 {
   border-color: #7c3aed;
   background: rgba(34, 0, 51, 0.97);
 }
+.project-card h1 {
+  font-size: 1.15rem;
+  color: #a259f7;
+  margin: 0.3rem 0 0.15rem 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .project-thumb {
   display: block;
   margin: 0 auto 0.5rem auto;
@@ -391,11 +401,12 @@ h1, h2 {
   border-radius: 50%;
   box-shadow: 0 2px 8px #a259f755;
 }
-.project-card h3 {
-  font-size: 1.25rem;
-  color: #a259f7;
-  margin: 0.5rem 0 0.2rem 0;
+#projetos h1 {
   text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-card p {
   font-size: 1rem;
@@ -432,47 +443,73 @@ h1, h2 {
     border-radius: 14px;
   }
 }
-<form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
-  <!-- seus campos -->
-</form>
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #232336 60%, #18181b 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(124, 58, 237, 0.10);
+  padding: 3rem 2rem 2.5rem 2rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+#contato h1, #contato h2 {
+  color: #a259f7;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.contact-form {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #a259f7;
+  background: #18181b;
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #7c3aed;
+  outline: none;
+}
+.contact-form button {
+  background: linear-gradient(90deg, #a259f7 0%, #7c3aed 100%);
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 2.2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px rgba(162, 89, 247, 0.15);
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.contact-form button:hover {
+  background: linear-gradient(90deg, #7c3aed 0%, #a259f7 100%);
+  transform: translateY(-3px) scale(1.04);
+}
 @media (max-width: 700px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 6rem 1rem;
-    min-height: 80vh;
+  #contato {
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
   }
-  
-  .hero-section img {
-    margin-right: 0;
-    margin-bottom: 3rem;
-    width: 250px;
-    height: 250px;
-    border-width: 3px;
-  }
-  
-  #ryan {
-    font-size: 2.5rem;
-  }
-  
-  #ryan::before {
-    font-size: 1rem;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  .skills, .projects {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .project-card, .skill-card {
-    width: 100%;
-  }
-  section {
-    padding: 1rem;
-  }
-  nav ul li {
-    margin: 0 0.5rem;
+  .contact-form {
+    max-width: 98vw;
+    padding: 0;
   }
 }
